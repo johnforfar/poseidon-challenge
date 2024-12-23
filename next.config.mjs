@@ -7,4 +7,4 @@ const nextConfig = {
   basePath: '/poseidon-challenge',
 }
 
-module.exports = nextConfig
+export default nextConfig

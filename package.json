@@ -11,6 +11,7 @@
     "compile-program": "poseidon compile -i programs/src/gameProgram.ts -o target/lib.rs"
   },
   "dependencies": {
+    "@next/font": "^14.2.15",
     "@solana/spl-token": "^0.4.9",
     "@solana/wallet-adapter-base": "^0.9.23",
     "@solana/wallet-adapter-react": "^0.15.35",

@@ -1,16 +1,12 @@
 // src/app/layout.tsx
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const roboto = Roboto({
+  variable: "--font-roboto",
+  weight: ["400", "700"],
   subsets: ["latin"],
 });
 
@@ -27,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-gray-950 text-white antialiased`}
+        className={`${roboto.variable} ${roboto.variable} bg-gray-950 text-white antialiased`}
       >
         <div className="min-h-screen">
           <main className="container mx-auto px-4 py-8">
